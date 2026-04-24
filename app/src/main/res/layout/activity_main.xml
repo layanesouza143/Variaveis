@@ -8,25 +8,62 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/fundo">
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="8dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/spinner_sexo"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="60dp"
+        android:id="@+id/ediTextNome"
+        android:textSize="15sp"
+        android:maxLength="3"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:padding="15dp"
+        android:hint="Digite sua idade"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/buttonCalcular"
+        android:fontFamily="@font/fonte"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:backgroundTint="@color/botao"
         android:padding="8dp"
-        android:text="Digite o nome"
-        android:id="@+id/ediTextNome" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:text="Motrar"
-            android:id="@+id/buttonMostrar"/>
-        <TextView
+        android:drawableEnd="@drawable/calendario"
+        android:text="Calcular" />
+
+    <TextView
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:id="@+id/textViewResultado"
-             android:textSize="16sp"
+            android:fontFamily="@font/fonte"
+            android:textSize="25sp"
+            android:backgroundTint="@color/botao"
+            android:padding="8dp"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp"/>
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:fontFamily="@font/fonte"
+        android:textSize="20sp"
+        android:backgroundTint="@color/botao"
+        android:padding="0dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:text="Layane Souza" />
+
+
+</LinearLayout>
